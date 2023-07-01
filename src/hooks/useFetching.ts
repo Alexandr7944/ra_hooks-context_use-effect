@@ -26,7 +26,10 @@ const useFetching = ( url: string, dependence: null | number ): FetchingReturn =
     };
     fethData();
 
-    return () => setData(null);
+    return () => {
+      setData(null);
+      setError('');
+    };
   }, [dependence, url]);
 
   return { data, loading, error }
