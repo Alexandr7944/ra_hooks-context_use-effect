@@ -24,6 +24,7 @@
 .item {
   line-height: 1.8;
   padding: 5px 15px;
+  cursor: pointer;
 }
 
 .item:not(.item:last-child) {  
